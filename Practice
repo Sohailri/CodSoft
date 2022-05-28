@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class StudentPassOrFail
+{
+public static void main(String args[])
+{
+Scanner input=new Scanner(System.in);
+byte sub1,sub2,sub3,sub4,sub5;
+float avg;
+System.out.println("Enter physics marks:");
+sub1=input.nextByte();
+
+System.out.println("Enter Math marks:");
+sub2=input.nextByte();
+
+System.out.println("Enter English marks:");
+sub3=input.nextByte();
+
+System.out.println("Enter Urdu marks:");
+sub4=input.nextByte();
+
+System.out.println("Enter Islamiyat marks:");
+sub5=input.nextByte();
+avg=sub1+sub2+sub3+sub4+sub5/5.0f;
+if(avg>=50 && sub1>=43 && sub2>=43 && sub3>=43 && sub4>=43 && sub5>=43)
+{
+
+System.out.println("Congratulation! you have been passed:");
+
+}
+else{
+
+System.out.println("Sorry, you have been failed:");
+}
+
+}
+
+}
