@@ -1,0 +1,23 @@
+class Addition
+{
+  int x,y;
+ Addition()
+{
+  x=10;
+  y=20;
+ }
+  Addition(int a, int b)
+{
+  x=a;
+  y=b;
+}
+ public class MethodOverloading
+{
+  public static void main(String args[])
+{
+   Addition p=new Addition();
+     Addition q=new Addition(40,50);
+ System.out.println(p.x+p.y);
+    System.out.println(q.x+q.y);
+  }
+        }
