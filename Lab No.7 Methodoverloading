@@ -21,3 +21,28 @@ class Addition
     System.out.println(q.x+q.y);
   }
         }
+
+
+PROGRAM N0.2:
+class Addition
+{
+ static int x;
+  static int y;
+ void Add()
+{
+  System.out.println(x+y);
+ }
+  
+}
+ public class MethodOverloading
+{
+  public static void main(String args[])
+{
+   Addition p=new Addition();
+     //p.x=10;
+     //p.y=20;
+      //p.Add();
+Addition.x=10;
+ System.out.println(Addition.x);
+  }
+        }
