@@ -1,0 +1,19 @@
+class Adition
+{
+ int x;
+ int y;
+  int Add()
+{
+   return x+y;
+ }
+  public class DemoAA
+ {
+  public static void main(String args[])
+  {
+   Addition p=new Addition();
+    p.x=10;
+     p.y=20;
+    System.out.println(p.Add);
+  }
+ }
+    }
