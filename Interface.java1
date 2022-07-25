@@ -1,0 +1,30 @@
+interface Bank
+{
+	float rateOfinterest();
+	}
+	class SBI implements Bank
+	{
+	public float rateOfinterest()
+	{
+	 return 9.15f;
+}
+	}
+class PNP implements Bank
+	{
+	public float rateOfinterest()
+	{
+	 return 9.7f;
+}
+
+}
+	
+public class TestInterface1
+{
+	public static void main(String args[])
+	{
+		SBI obj = new SBI();
+		PNP obj1 = new PNP();
+		System.out.println("SBI:"+obj.rateOfinterest());
+		System.out.println("PNP:"+obj1.rateOfinterest());
+	}
+}
