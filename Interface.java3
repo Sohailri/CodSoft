@@ -1,0 +1,28 @@
+interface drawable
+{
+	void draw();
+}
+class rectangle implements drawable
+{
+	public void draw()
+	{
+		System.out.println("Rectangle drawn."); 
+	}
+}
+class circle implements drawable
+{
+	public void draw()
+	{
+		System.out.println("Circle drawn."); 
+	}
+}
+public class TestInterface4
+{
+	public static void main(String args[])
+	{
+		rectangle obj1=new rectangle();
+		circle obj2=new circle();
+		obj1.draw();
+		obj2.draw();
+	}
+}
