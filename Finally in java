@@ -1,0 +1,22 @@
+ public class Exceptionl
+ {
+   public static void main (string args [])
+   {
+    int a;
+     try
+   {
+     a = 10 /2;
+   system.out.println(a); 
+   }
+    catch(arithimetic exception e)
+    { 
+     system.out.println("division by zero");
+     }
+	 finally
+	 {
+		 System.out.println("Finally Always execute either exception generate or Not");
+	 }
+   }
+ }
+  
+   
