@@ -1,0 +1,22 @@
+ public class Exception13
+ {
+   public  void divisionByZero(int a,int b)
+   {
+    if(b==0)
+   {
+     throw new  ArithmeticException("Cannot divide by Zero");
+   }
+   else
+    { 
+     system.out.println(" a divide by is:"a/b);
+     }
+   }
+   public static void main(String args[])
+ {
+	 Exception13 obj = new Exception13();
+	 obj.divisionByZero(10,0);
+ }
+ }
+ 
+  
+   
