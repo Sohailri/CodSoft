@@ -1,0 +1,32 @@
+abstract class vehicle
+{
+	int tyres;
+	abstract void start();
+}
+class Car extends vehicle
+{
+	void start()
+	{
+		System.out.println("Car start with key");
+	}
+	
+}
+class Bike extends vehicle
+{
+	void start()
+	{
+		System.out.print("Bike start with key");
+	}
+	
+}
+public class LabL9
+{
+	public static void main(String args[])
+	{
+		Car obj=new Car();
+		Bike obj2=new Bike();
+		obj.start();
+		obj2.start();
+		
+	}
+}
