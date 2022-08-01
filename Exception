@@ -1,0 +1,23 @@
+import java.io.*;
+class Exception1
+{
+	void validdateAge(int age)throws ArithmeticException,IOException
+	{
+		if(age<18)
+			throw new ArithmeticException("Not Eligible for CNIC");
+		else 
+			throw new IOException("Eligible for CNIC");
+	}
+	public static void main(String args[])
+	{
+		Exception1 obj=new Exception1();
+		try
+		{
+			obj.validdateAge(19);
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+	}
+}
