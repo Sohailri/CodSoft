@@ -1,0 +1,18 @@
+ public class Exceptionl
+ {
+   public static void main (string args [])
+   {
+    int a;
+     try
+   {
+     a = 10 /0;
+   system.out.println("control will not come here"); 
+   }
+    catch(arithimetic exception e)
+    { 
+     system.out.println("division by zero");
+     }
+   }
+ }
+  
+   
