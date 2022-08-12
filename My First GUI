@@ -1,0 +1,33 @@
+import javax.swing.*;
+import java.awt.event.*;
+public class FirstGUI
+{
+	public static void main(String args[])
+	{
+		JFrame p = new JFrame("Sohail Riaz ");
+		p.setSize(600,400); //width,hieght of frame
+
+
+                JButton btn1=new JButton("CLICK ME");
+                btn1.setBounds(100,50,150,40);
+                p.add(btn1);
+                JButton btn2=new JButton("CLICK ME");
+                btn2.setBounds(260,50,150,40);
+                p.add(btn2);
+               
+
+                JLabel lbl1=new JLabel("CLICK ME");
+                lbl1.setBounds(260,100,150,40);
+                p.add(lbl1);
+
+                btn1.addActionListener(new ActionListener(){
+                    public void actionPerformed(ActionEvent e)
+                    {
+                     lbl1.setText("Button CLicked.Baloch");
+                     }              
+                 });
+                p.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		p.setLayout(null);
+		p.setVisible(true);
+	}
+}
