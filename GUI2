@@ -1,0 +1,32 @@
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
+public class MYGUI
+{
+	public static void main(String args[])
+	{
+		            // Creating frame
+		JFrame p = new JFrame("Sohail Riaz");
+		p.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		p.setSize(600,600); //width,hieght of frame
+		             //Creating Button			 
+		JButton btn1 = new JButton("Click here");
+ 		btn1.setBounds(200,200,100,60);// x-axis,y-axis,width,hieght
+        p.add(btn1);
+		             //Creatinbg a label
+        JLabel	lbl1 =	new JLabel("Tap to proceed");
+		lbl1.setBounds(200,300,100,50);
+		p.add(lbl1);
+		btn1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				lbl1.setText("Welcome.");
+			}
+		});
+		
+        //Making it visible		
+		p.setLayout(new FlowLayout() );
+		p.setVisible(true);
+	}
+}
