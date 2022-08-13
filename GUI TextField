@@ -1,0 +1,21 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+public class TextFieldExample1
+{
+	public static void main(String args[])
+	{
+		JFrame frm=new JFrame("My TextField");
+		TextField tf1,tf2;
+		tf1=new TextField("WElcome");
+		tf1.setBounds(50,100,100,30);
+		tf2=new TextField("our Tutorial");
+		tf2.setBounds(50,50,100,30);
+		frm.add(tf1);
+		frm.add(tf2);
+		frm.setSize(400,400);
+		frm.setLayout(null);
+		frm.setVisible(true);
+		
+	}
+}
