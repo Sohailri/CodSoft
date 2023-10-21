@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Account Form</title>
+</head>
+<body>
+    <div class="container"> 
+    <form action="">
+        <h1 class="main-heading">Account Payment form</h1>
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" required></p>
+           <legend>Gender</legend>
+        <p>
+            Male: <input type="radio" name="gender" id="male"> Female: <input type="radio" name="gender" id="female">
+        </p>
+        <p>Address:<textarea name="Address" id="Address" cols="70" rows="7"></textarea>
+        </p>
+        <p>Mobile Number: <input type="number" name="mobile number" id="mobile number"></p>
+        <p>Email: <input type="email" name="email" id="email"></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode" required></p>
+        <h2>Payment Information</h2>
+        <p>
+            Card Type:
+            <select name="Card Type" id="Card Type">
+                <option value="">--Select a Card Type--</option>
+                <option value="PayPak">PayPak</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Gold Card">Gold Card</option>
+                <option value="Platinum">Platinum</option>
+            </select>
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number"></p>
+        <p>Card Expiry: <input type="datetime" name="date" id=""></p>
+        <p>Card Pin: <input type="password" name="card pin" id="card pin" required></p>
+        <p>Branch Name:
+            <select name="Branch Name" id="Branch Name">
+                <option value="">--Select Branch--</option>
+                <option value="Bank Al Habib Limitted">Bank Al Habib Limitted</option>
+                <option value="UBL">UBL</option>
+                <option value="NBP">NBP</option>
+                <option value="HBL">HBL</option>
+                <option value="MCB">MCB</option>
+            </select>
+        </p>
+         <input type="submit" value="Pay Now">
+
+    </form>
+    </div>
+</body>
+</html>
